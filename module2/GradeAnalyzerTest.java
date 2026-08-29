@@ -31,7 +31,9 @@ public class GradeAnalyzerTest {
 
     @Test
     public void testAverageIsNotIntegerDivision() {
-        ArrayList<Integer> scores = new ArrayList<>(Arrays.asList(7, 2));
-        assertEquals(4.5, GradeAnalyzer.calculateAverage(scores), 0.0001);
+        ArrayList<Integer> scores = new ArrayList<>(
+            Arrays.asList(88, 92, 76, 45, 100, 63, 81, 57, 94, 72));
+
+        assertEquals(76.8, GradeAnalyzer.calculateAverage(scores), 0.0001);
     }
 }
